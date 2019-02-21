@@ -17,7 +17,7 @@ module.exports = {
   //   useNullAsDefault: true
   // },
 
-  development: {
+  production: {
     client: "pg",
     connection: process.env.DATABASE_URL,
     pool: {
