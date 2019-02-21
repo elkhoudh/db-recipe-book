@@ -6,7 +6,7 @@ module.exports = {
   development: {
     client: "pg",
     connection:
-      "postgres://wniisgorwnahqa:3bcd0a3d4df2559871b7a95d9d34812b0cbd0ca45e7e0b63ba3d67fbf262cc36@ec2-54-225-237-84.compute-1.amazonaws.com:5432/dcf4018mto3p33",
+      "postgres://adwwrtjbyranxt:76de0ba755849cc306f41b431e4890eb6bd7eaf84c327097401d14cc036a6ae6@ec2-107-21-99-237.compute-1.amazonaws.com:5432/dg68gff987bi9",
     pool: {
       min: 2,
       max: 10
