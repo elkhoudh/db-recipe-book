@@ -3,23 +3,10 @@ const pg = require("pg");
 pg.defaults.ssl = true;
 
 module.exports = {
-  // development: {
-  //   client: "sqlite3",
-  //   connection: {
-  //     filename: "./data/dev.db3"
-  //   },
-  //   migrations: {
-  //     directory: "./data/migrations"
-  //   },
-  //   seeds: {
-  //     directory: "./data/seeds"
-  //   },
-  //   useNullAsDefault: true
-  // },
-
   development: {
     client: "pg",
-    connection: process.env.DATABASE_URL,
+    connection:
+      "postgres://wniisgorwnahqa:3bcd0a3d4df2559871b7a95d9d34812b0cbd0ca45e7e0b63ba3d67fbf262cc36@ec2-54-225-237-84.compute-1.amazonaws.com:5432/dcf4018mto3p33",
     pool: {
       min: 2,
       max: 10
@@ -30,4 +17,19 @@ module.exports = {
     },
     useNullAsDefault: true
   }
+
+  // production: {
+  //   client: "pg",
+  //   connection:
+  //     "postgres://wniisgorwnahqa:3bcd0a3d4df2559871b7a95d9d34812b0cbd0ca45e7e0b63ba3d67fbf262cc36@ec2-54-225-237-84.compute-1.amazonaws.com:5432/dcf4018mto3p33",
+  //   pool: {
+  //     min: 2,
+  //     max: 10
+  //   },
+  //   migrations: {
+  //     tableName: "knex_migrations",
+  //     directory: "./data/migrations"
+  //   },
+  //   useNullAsDefault: true
+  // }
 };
