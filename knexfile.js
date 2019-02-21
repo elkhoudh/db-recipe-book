@@ -3,21 +3,21 @@ const pg = require("pg");
 pg.defaults.ssl = true;
 
 module.exports = {
-  development: {
-    client: "sqlite3",
-    connection: {
-      filename: "./data/dev.db3"
-    },
-    migrations: {
-      directory: "./data/migrations"
-    },
-    seeds: {
-      directory: "./data/seeds"
-    },
-    useNullAsDefault: true
-  },
+  // development: {
+  //   client: "sqlite3",
+  //   connection: {
+  //     filename: "./data/dev.db3"
+  //   },
+  //   migrations: {
+  //     directory: "./data/migrations"
+  //   },
+  //   seeds: {
+  //     directory: "./data/seeds"
+  //   },
+  //   useNullAsDefault: true
+  // },
 
-  production: {
+  development: {
     client: "pg",
     connection: process.env.DATABASE_URL,
     pool: {
